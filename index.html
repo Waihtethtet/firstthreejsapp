@@ -9,7 +9,16 @@
 
   <link rel="icon" href="https://discoverthreejs.com/favicon.ico" type="image/x-icon">
 
-  <link href="./styles/main.css" rel="stylesheet" type="text/css">
+  <link href="./style/main.css" rel="stylesheet" type="text/css">
+
+  <script type="importmap"> { 
+    "imports": { 
+        "three": "/node_modules/three/build/three.module.js",
+        "three/addons/": "/node_modules/three/examples/jsm/",
+        "three/nodes": "/node_modules/three/examples/jsm/nodes/Nodes.js" 
+    } 
+}     
+</script> 
 
   <script type="module" src="./src/main.js"></script>
 </head>
@@ -17,7 +26,11 @@
 <body>
   <h1>Discoverthreejs.com - How to Include three.js in Your Projects</h1>
 
-  <h2>Nothing to see here :)</h2>
+  <h2>Nothing to see here :) </h2>
+  <div id="scene-container">
+    <!-- Our <canvas> will be inserted here -->
+  </div>
 </body>
 
 </html>
+
